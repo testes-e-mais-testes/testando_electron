@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="thierry rene web dev - http://thierryrenewebdev.com">
+    <title>electron first app</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        #side-nav {
+            background-color: #424242;
+            padding-top: 18px;
+            height: 100%;
+            width: 150px;
+            float: left;
+        }
+        #side-nav a {
+            font-size: 1.8rem;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        #side-nav a:hover {
+            color: #52affb;
+        }
+        #side-nav ul {
+            list-style: none;
+            padding: 20px;
+            margin: 0px;
+        }
+        #side-nav li {
+          padding-bottom: 8px;
+        }
+        #wrapper {
+          height: 100%;
+          min-width: 800px;
+        }
+        #main {
+            float: left;
+            margin-left: 20px;
+            min-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="side-nav">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-list"></i>List</a></li>
+            <li><a href="#"><i class="fa fa-search"></i>Search</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>User</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>testando desenvolvimento com Electron</h1>
+        <p>primeira aplicação com Electron</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum maiores repellendus suscipit rem voluptatem nobis ipsum nihil recusandae. Ipsum assumenda eius qui animi dicta quod ipsa at aliquam deserunt.</p>
+    </div>
+</body>
+
+</html>
