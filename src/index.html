@@ -3,23 +3,23 @@
 
 <head>
     <title>Electron - first app</title>
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/photon.css">
-
     <!-- Javascript -->
     <script src="./js/menu.js" charset="utf-8"></script>
+    <script>var $ = jQuery = require('jquery')</script>
 </head>
 
 <body>
     <div class="window">
+
         <header class="toolbar toolbar-header">
-            <h1 class="title">Header with actions</h1>
+            <h1 class="title">_primeiro_app_electron</h1>
             <div class="toolbar-actions">
                 <div class="btn-group">
                     <button class="btn btn-default"><span class="icon icon-home"></span></button>
                     <button class="btn btn-default"><span class="icon icon-folder"></span></button>
-                    <button class="btn btn-default"><span class="icon icon-cloud"></span></button>
+                    <button class="btn btn-default active"><span class="icon icon-cloud"></span></button>
                     <button class="btn btn-default"><span class="icon icon-popup"></span></button>
                     <button class="btn btn-default"><span class="icon icon-shuffle"></span></button>
                 </div>
@@ -27,18 +27,43 @@
                 <button class="btn btn-default btn-dropdown pull-right"><span class="icon icon-megaphone"></span></button>
             </div>
         </header>
+
         <div class="window-content">
             <div class="pane-group">
-                <div class="pane-sm sidebar">...</div>
+                <div class="pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Favorites</h5>
+                        <a class="nav-group-item active"><span class="icon icon-home"></span>connors</a>
+                        <span class="nav-group-item"><span class="icon icon-download"></span>Downloads</span>
+                        <span class="nav-group-item"><span class="icon icon-folder"></span>Documents</span>
+                        <span class="nav-group-item"><span class="icon icon-signal"></span>AirPlay</span>
+                        <span class="nav-group-item"><span class="icon icon-print"></span>Applications</span>
+                        <span class="nav-group-item"><span class="icon icon-cloud"></span>Desktop</span>
+                    </nav>
+                </div>
                 <div class="pane">
-                  <h1>first electron application</h1>
+                    <!-- <h1>home</h1> -->
                 </div>
             </div>
         </div>
+
         <footer class="toolbar toolbar-footer">
-            <h1 class="title">Footer</h1>
+            <div class="toolbar-actions">
+                <button class="btn btn-default">Cancel</button>
+                <button class="btn btn-primary pull-right">Save</button>
+            </div>
         </footer>
+
     </div>
+
 </body>
+
+<script type="text/javascript">
+  var app = require('./lib/app.js');
+  app.on('rendered', function(rendered) {
+    $('#main').html(rendered);
+    console.log('jquery OK!');
+  });
+</script>
 
 </html>

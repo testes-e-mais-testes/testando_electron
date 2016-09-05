@@ -10,7 +10,6 @@ var View = function(viewName) {
     this.toHtml = function(data) {
         return template(data);
     };
-
 };
 
 module.exports = View;
