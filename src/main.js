@@ -5,7 +5,7 @@ let win
 
 function createWindow () {
   // criando a janela
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width: 800, height: 800})
 
   // apontando a url a ser carregada onload
   win.loadURL(`file://${__dirname}/index.html`)
