@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="thierry rene web dev - http://thierryrenewebdev.com">
+    <title>electron first app</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Segoe UI", Ubuntu, Cantarell, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #top-bar {
+            text-align: right;
+            padding: 12px;
+            background-color: #cccccc;
+            height: 25px;
+            position: absolute;
+            left: 71px;
+            top: 0;
+            right: 0;
+        }
+
+        #top-bar a {
+            text-decoration: none;
+        }
+
+        #side-nav {
+            background-color: #424242;
+            padding-top: 18px;
+            height: 100%;
+            width: 71px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        #side-nav a {
+            font-size: 1.8rem;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        #side-nav a:hover {
+            color: #52affb;
+        }
+
+        #side-nav ul {
+            list-style: none;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        #side-nav li {
+            padding-bottom: 8px;
+        }
+
+        #main {
+            /*border: solid 1px blue;*/
+            margin-left: 20px;
+            min-width: 500px;
+            position: absolute;
+            padding: 35px;
+            top: 50px;
+            left: 71px;
+            bottom: 0;
+            right: 0;
+        }
+
+        #wrapper {
+            height: 100%;
+            min-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="top-bar">
+            <a href="#"><i class="fa fa-user"></i></a>
+        </div>
+
+        <div id="side-nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><i class="fa fa-list"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div id="main">
+            <h1>testando desenvolvimento com Electron</h1>
+            <p>primeira aplicação com Electron</p>
+            <p>criando layout simples</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
